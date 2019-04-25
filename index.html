@@ -13,18 +13,27 @@
 
     #photo {
       float: right;
+      margin: 0 0 1em 1em;
+      width: 200px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 600px) {
+      #photo {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+      }
     }
 
     #photo img {
       width: 200px;
-      border-radius: 20px;
-      margin: 0 0 1em 1em;
     }
 
     @media (max-width: 600px) {
       #photo img {
         width: 140px;
-        border-radius: 50%;
       }
     }
 
@@ -89,7 +98,8 @@
     <h3>Sundry interests</h3>
     <ul>
       <li>C++ and python</li>
-      <li>Systems neuroscience</li>
+      <li>Literature</li>
+      <li>Bluegrass</li>
       <li>Bicycles</li>
     </ul>
     
