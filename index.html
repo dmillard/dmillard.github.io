@@ -4,50 +4,67 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="/favicon.ico?v=9BP06PP5E0">
+  <link rel="shortcut icon" href="/assets/favicon.ico?v=9BP06PP5E0">
   <title>David Millard</title>
   <style type="text/css">
     body {
-      font-family: serif;
+      font-family: monospace;
+      font-size: 11pt;
     }
 
     #photo {
       float: right;
       margin: 0 0 1em 1em;
       width: 200px;
-      border-radius: 20px;
       overflow: hidden;
+      border: solid 3px black;
     }
 
-    @media (max-width: 600px) {
+    #photo img {
+      width: 200px;
+      display: block;
+    }
+
+    #footer {
+      margin-top: 20px;
+      font-size: 8pt;
+      color: grey;
+    }
+
+    @media (min-width: 670px) {
+      body {
+        background-color: silver;
+      }
+
+      #container {
+        width: 620px;
+        margin: 30px auto 30px auto;
+        border: solid 3px black;
+        padding: 10px;
+        background-color: white;
+      }
+    }
+
+    @media (max-width: 670px) {
+      body {
+        background-color: white;
+      }
+
+      #container {
+        margin: 0 5px 0 5px;
+      }
+
       #photo {
         width: 140px;
         height: 140px;
         border-radius: 50%;
       }
-    }
 
-    #photo img {
-      width: 200px;
-    }
-
-    @media (max-width: 600px) {
       #photo img {
         width: 140px;
       }
     }
 
-    #container {
-      margin: 0 5px 0 5px;
-    }
-
-    @media (min-width: 600px) {
-      #container {
-        width: 600px;
-        margin: 0 auto;
-        margin-top: 60px;
-      }
-    }
   </style>
 
 </head>
@@ -56,108 +73,72 @@
 
   <div id="container">
     <div id="photo">
-      <img src="photo.jpg" alt="Photo" />
+<img src="/assets/photo.jpg" alt="Photo" />
+</div>
+
+<h1>David Millard</h1>
+<p><a href="https://www.linkedin.com/in/davidrmillard">LinkedIn</a> /
+<a href="/assets/millard_cv.pdf">CV</a> /
+<a href="https://scholar.google.com/citations?user=QSjK6BwAAAAJ&amp;hl=en">Google Scholar</a></p>
+<p>I am a computer science Ph.D. student at the University of Southern California,
+advised by <a href="http://www-robotics.usc.edu/~gaurav/">Gaurav Sukhatme</a>.  I am funded
+by a NASA Space Technology Research Fellowship.</p>
+<p>My goal is to create Robots of Economic Value that Don't Make the World Worse
+(REVDMWWs).</p>
+<h3>Research interests</h3>
+<ul>
+<li>Robots in dynamic environments</li>
+<li>Strong inductive biases in machine learning</li>
+</ul>
+<h3>Other interests</h3>
+<ul>
+<li>C++ and Julia</li>
+<li>Bluegrass</li>
+<li>Bicycles</li>
+</ul>
+<h3>Publications</h3>
+<ul>
+<li>Eric Heiden&ast;, <strong>David Millard&ast;</strong>, Hejia Zhang, Gaurav S. Sukhatme.
+  Interactive Differentiable Simulation. arXiv preprint. 2019
+  (<a href="https://arxiv.org/pdf/1905.10706.pdf">pdf</a>)</li>
+<li>Eric Heiden&ast;, <strong>David Millard&ast;</strong>, Gaurav S. Sukhatme. Real2Sim
+  Transfer using Differentiable Physics. <em>In R:SS Workshop on Closing the
+  Reality Gap in Sim2Real Transfer for Robotic Manipulation</em>, 2019.
+  (<a href="https://sim2real.github.io/assets/papers/heiden.pdf">pdf</a>)</li>
+</ul>
+<h3>News</h3>
+<ul>
+<li>June 2019 - I visited the <a href="https://sim2real.github.io">RSS Sim2Real workshop</a>
+  to present our work on parameter estimation through simulation
+  (<a href="https://sim2real.github.io/assets/papers/heiden.pdf">pdf</a>)</li>
+<li>April 2019 - I am happy to accept the NASA Space Technology Research
+  Fellowship</li>
+</ul>
+<h3>Condensed history</h3>
+<p>In 2019, I worked with <a href="https://ironox.com">Iron Ox</a> on kinodynamically limited
+arm planning problems using trajectory optimization methods.</p>
+<p>From 2015 to 2018, I was a software engineer at
+<a href="https://x.company">Google&nbsp;X</a> working on robotics.</p>
+<p>From 2014 to 2015, I was a software engineer at Microsoft.</p>
+<p>I graduated Summa Cum Laude in 2014 with a B.S. in mathematics and computer
+science from the <a href="https://www.uga.edu">University of Georgia</a>, where I studied
+under the auspices of the <a href="https://honors.uga.edu/c_s/scholarships/f_f/foundation_fellows.html">Foundation
+Fellowship</a>.</p>
+<p>In July 2013, I worked in Khayelitsha, South Africa, collaborating with the
+<a href="http://www.sii.uct.ac.za">Schools Improvement Initiative</a> at the University of
+Cape Town to repair and improve computer labs at primary and secondary schools
+through free software and open knowledge bases, like Wikipedia.</p>
+<p>From May to August 2012, I researched multiagent mapping systems in the Computer
+Networks and Telematics Group at the University of Freiburg, in Freiburg,
+Germany.</p>
+<p>In 2012 and 2013, I served as president of <a href="//ugamathcounts.com">UGA Mathcounts
+Outreach</a>.</p>
+<p>From 2009 to 2013, I was a staff member of <a href="//www.freeitathens.org">Free IT
+Athens</a>.</p>
+
+    <div id="footer">
+      Generated with <a href="/generate.py">this script</a>. Take it!
     </div>
-
-    <h1>David Millard</h1>
-    <p>
-    </p>
-
-    <p>
-      <a href="//www.linkedin.com/in/davidrmillard">LinkedIn</a> /
-      <a href="/millard_cv.pdf">CV</a> /
-      <a
-        href="https://scholar.google.com/citations?user=QSjK6BwAAAAJ&hl=en">Google
-      Scholar</a>
-    </p>
-
-    <p>
-      I am a computer science Ph.D. student at the University of Southern California, advised
-      by <a href="http://www-robotics.usc.edu/~gaurav/">Gaurav Sukhatme</a>.  I
-      am funded by a NASA Space Technology Research Fellowship.
-    </p>
-
-    <p>
-      My goal is to create Robots of Economic Value that Don't Make the World
-      Worse (REVDMWWs).
-    </p>
-
-    <h3>Research interests</h3>
-    <ul>
-      <li>Robots in dynamic environments</li>
-      <li>Strong inductive biases in machine learning</li>
-    </ul>
-
-    <h3>Other interests</h3>
-    <ul>
-      <li>C++ and Julia</li>
-      <li>Bluegrass</li>
-      <li>Bicycles</li>
-    </ul>
-
-    <h3>Publications</h3>
-    <ul>
-      <li>
-      Eric Heiden*, <b>David Millard*</b>, Hejia Zhang, Gaurav S. Sukhatme.
-      Interactive Differentiable Simulation. arXiv preprint. 2019
-      (<a href="https://arxiv.org/pdf/1905.10706.pdf">pdf</a>)
-      </li>
-      <li>
-      Eric Heiden*, <b>David Millard*</b>, Gaurav S. Sukhatme. Real2Sim Transfer
-      using Differentiable Physics. <i>In R:SS Workshop on Closing the Reality
-        Gap in Sim2Real Transfer for Robotic Manipulation</i>, 2019.
-      (<a href="https://sim2real.github.io/assets/papers/heiden.pdf">pdf</a>)
-      </li>
-    </ul>
-    
-    <h3>News</h3>
-    <ul>
-      <li>June 2019 - I visited the <a href="https://sim2real.github.io">RSS Sim2Real workshop</a> to present our work on parameter estimation through simulation (<a href="https://sim2real.github.io/assets/papers/heiden.pdf">pdf</a>)</li>
-      <li>April 2019 - I am happy to accept the NASA Space Technology Research Fellowship</li>
-    </ul>
-
-    <h3>Condensed history</h3>
-
-    <p>
-      In 2019, I worked with <a href="https://ironox.com">Iron Ox</a> on
-      kinodynamically limited arm planning problems using trajectory
-      optimization methods.
-    </p>
-
-    <p>
-      From 2015 to 2018, I was a software engineer at <a href="//x.company">Google&nbsp;X</a>      working on robotics.
-    </p>
-
-    <p>
-      From 2014 to 2015, I was a software engineer at Microsoft.
-    </p>
-
-    <p>
-      I graduated Summa Cum Laude in 2014 with a B.S. in mathematics and computer science
-      from the <a href="//www.uga.edu">University of Georgia</a>, where I studied
-      under the auspices of the <a href="//honors.uga.edu/c_s/scholarships/f_f/foundation_fellows.html">Foundation
-Fellowship</a>.
-    </p>
-
-    <p>
-      In July 2013, I worked in Khayelitsha, South Africa, collaborating with the
-      <a href="http://www.sii.uct.ac.za">Schools Improvement Initiative</a> at the
-      University of Cape Town to repair and improve computer labs at primary and
-      secondary schools through free software and open knowledge bases, like Wikipedia.
-    </p>
-
-    <p>
-      From May to August 2012, I researched multiagent mapping systems in the Computer
-      Networks and Telematics Group at the University of Freiburg, in Freiburg, Germany.
-    </p>
-
-    <p>
-      In 2012 and 2013, I served as president of <a href="//ugamathcounts.com">UGA Mathcounts Outreach</a>.
-    </p>
-
-    <p>
-      From 2009 to 2013, I was a staff member of <a href="//www.freeitathens.org">Free IT Athens</a>.
-    </p>
   </div>
 
 </body>

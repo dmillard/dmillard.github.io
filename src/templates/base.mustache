@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="/assets/favicon.ico?v=9BP06PP5E0">
+  <title>David Millard</title>
+  <style type="text/css">
+    body {
+      font-family: monospace;
+      font-size: 11pt;
+    }
+
+    #photo {
+      float: right;
+      margin: 0 0 1em 1em;
+      width: 200px;
+      overflow: hidden;
+      border: solid 3px black;
+    }
+
+    #photo img {
+      width: 200px;
+      display: block;
+    }
+
+    #footer {
+      margin-top: 20px;
+      font-size: 8pt;
+      color: grey;
+    }
+
+    @media (min-width: 670px) {
+      body {
+        background-color: silver;
+      }
+
+      #container {
+        width: 620px;
+        margin: 30px auto 30px auto;
+        border: solid 3px black;
+        padding: 10px;
+        background-color: white;
+      }
+    }
+
+    @media (max-width: 670px) {
+      body {
+        background-color: white;
+      }
+
+      #container {
+        margin: 0 5px 0 5px;
+      }
+
+      #photo {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+      }
+
+      #photo img {
+        width: 140px;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+    {{content}}
+
+    <div id="footer">
+      Generated with <a href="/generate.py">this script</a>. Take it!
+    </div>
+  </div>
+
+</body>
+
+</html>
