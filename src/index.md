@@ -45,6 +45,10 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 
 ### Condensed history
 
+In 2020, I was a research intern at [Google
+Brain](https://research.google/teams/brain/), working on high inductive bias
+methods of robot learning.
+
 In 2019, I worked with [Iron Ox](https://ironox.com) on kinodynamically limited
 arm planning problems using trajectory optimization methods.
 
