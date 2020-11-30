@@ -8,8 +8,12 @@
   <title>David Millard</title>
   <style type="text/css">
     body {
-      font-family: monospace;
+      font-family: serif;
       font-size: 11pt;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: monospace;
     }
 
     #photo {
@@ -31,13 +35,13 @@
       color: grey;
     }
 
-    @media (min-width: 670px) {
+    @media (min-width: 870px) {
       body {
         background-color: silver;
       }
 
       #container {
-        width: 620px;
+        width: 820px;
         margin: 30px auto 30px auto;
         border: solid 3px black;
         padding: 10px;
@@ -45,7 +49,7 @@
       }
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: 870px) {
       body {
         background-color: white;
       }
@@ -73,10 +77,6 @@
 
   <div id="container">
     {{content}}
-
-    <div id="footer">
-      Generated with <a href="https://github.com/dmillard/dmillard.github.io/blob/master/generate.py">this script</a>. Take it! (MIT licensed)
-    </div>
   </div>
 
 </body>

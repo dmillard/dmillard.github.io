@@ -3,12 +3,13 @@
 </div>
 
 # David Millard
+
 [LinkedIn](https://www.linkedin.com/in/davidrmillard) /
 [CV](/assets/millard_cv.pdf) /
 [Google Scholar](https://scholar.google.com/citations?user=QSjK6BwAAAAJ&hl=en)
 
 I am a computer science Ph.D. student at the University of Southern California,
-advised by [Gaurav Sukhatme](http://www-robotics.usc.edu/~gaurav/).  I am funded
+advised by [Gaurav Sukhatme](http://www-robotics.usc.edu/~gaurav/). I am funded
 by a NASA Space Technology Research Fellowship.
 
 My goal is to create Robots of Economic Value that Don't Make the World Worse
@@ -17,22 +18,36 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 ### Research interests
 
 - Robots in dynamic environments
+- Physics simulation
 - Strong inductive biases in machine learning
 
 ### Other interests
 
 - C++ and Julia
-- Bluegrass
 - Bicycles
 
 ### Publications
 
-- Eric Heiden&ast;, **David Millard&ast;**, Hejia Zhang, Gaurav S. Sukhatme.
+- Eric Heiden\*, **David Millard\***, Erwin Coumans, Yizhou Sheng, Gaurav S.
+  Sukhatme. NeuralSim: Augmenting Differentiable Simulators with Neural
+  Networks. arXiv preprint. 2020 ([pdf](https://arxiv.org/pdf/2011.04217.pdf))
+
+- Eric Heiden, **David Millard**, Erwin Coumans, Gaurav S. Sukhatme. Augmenting
+  Differentiable Simulators with Neural Networks to Close the Sim2Real Gap. _In
+  NeurIPS workshop on Differentiable Computer Vision, Graphics, and Physics_, 2020
+  ([pdf](https://arxiv.org/pdf/2007.06045.pdf))
+
+- **David Millard\***, Eric Heiden\*, Shubham Agrawal, Gaurav S. Sukhatme.
+  Automatic Differentiation and Continuous Sensitivity Analysis of Rigid Body
+  Dynamics. arXiv preprint. 2020 ([pdf](https://arxiv.org/pdf/2001.08539.pdf))
+
+- Eric Heiden\*, **David Millard\***, Hejia Zhang, Gaurav S. Sukhatme.
   Interactive Differentiable Simulation. arXiv preprint. 2019
   ([pdf](https://arxiv.org/pdf/1905.10706.pdf))
-- Eric Heiden&ast;, **David Millard&ast;**, Gaurav S. Sukhatme. Real2Sim
-  Transfer using Differentiable Physics. *In R:SS Workshop on Closing the
-  Reality Gap in Sim2Real Transfer for Robotic Manipulation*, 2019.
+
+- Eric Heiden\*, **David Millard\***, Gaurav S. Sukhatme. Real2Sim Transfer
+  using Differentiable Physics. _In R:SS Workshop on Closing the Reality Gap
+  in Sim2Real Transfer for Robotic Manipulation_, 2019.
   ([pdf](https://sim2real.github.io/assets/papers/heiden.pdf))
 
 ### News
@@ -44,6 +59,10 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
   Fellowship
 
 ### Condensed history
+
+In 2020, I was a visiting technologist at NASA Ames Research Center, working
+with the Astrobee team in the [Intelligent Robotics
+Group](https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/).
 
 In 2020, I was a research intern at [Google
 Brain](https://research.google/teams/brain/), working on high inductive bias
