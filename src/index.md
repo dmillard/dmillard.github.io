@@ -28,6 +28,15 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 
 ### Publications
 
+- James A. Preiss\*, **David Millard\***, Tao Yao\*, Gaurav S. Sukhatme.
+  Tracking Fast Trajectories with a Deformable Object using a Learned Model.
+  IEEE Conference on Robotics and Automation. 2021.
+
+- Eric Heiden, Christopher E. Denniston, **David Millard**, Fabio Ramos, Gaurav
+  S. Sukhatme. Probabilistic Inference of Simulation Parameters vis Parallel
+  Differentiable Simulation. IEEE Conference on Robotics and Automation. 2021.
+  ([pdf](https://arxiv.org/pdf/2109.08815.pdf))
+
 - Eric Heiden\*, **David Millard\***, Erwin Coumans, Yizhou Sheng, Gaurav S.
   Sukhatme. NeuralSim: Augmenting Differentiable Simulators with Neural
   Networks. arXiv preprint. 2020 ([pdf](https://arxiv.org/pdf/2011.04217.pdf))
@@ -49,14 +58,6 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
   using Differentiable Physics. _In R:SS Workshop on Closing the Reality Gap
   in Sim2Real Transfer for Robotic Manipulation_, 2019.
   ([pdf](https://sim2real.github.io/assets/papers/heiden.pdf))
-
-### News
-
-- June 2019 - I visited the [RSS Sim2Real workshop](https://sim2real.github.io)
-  to present our work on parameter estimation through simulation
-  ([pdf](https://sim2real.github.io/assets/papers/heiden.pdf))
-- April 2019 - I am happy to accept the NASA Space Technology Research
-  Fellowship
 
 ### Condensed history
 
