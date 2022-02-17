@@ -30,11 +30,11 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 
 - James A. Preiss\*, **David Millard\***, Tao Yao\*, Gaurav S. Sukhatme.
   Tracking Fast Trajectories with a Deformable Object using a Learned Model.
-  IEEE Conference on Robotics and Automation. 2021.
+  IEEE Conference on Robotics and Automation. 2022.
 
 - Eric Heiden, Christopher E. Denniston, **David Millard**, Fabio Ramos, Gaurav
   S. Sukhatme. Probabilistic Inference of Simulation Parameters vis Parallel
-  Differentiable Simulation. IEEE Conference on Robotics and Automation. 2021.
+  Differentiable Simulation. IEEE Conference on Robotics and Automation. 2022.
   ([pdf](https://arxiv.org/pdf/2109.08815.pdf))
 
 - Eric Heiden\*, **David Millard\***, Erwin Coumans, Yizhou Sheng, Gaurav S.
