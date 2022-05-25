@@ -62,6 +62,10 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 
 ### Condensed history
 
+In 2022, I was a visiting technologist at the Jet Propulsion Lab in [group
+347G](https://www-robotics.jpl.nasa.gov/who-we-are/groups/347G/), working on
+autonomous science for moons of the outer planets.
+
 In 2020, I was a visiting technologist at NASA Ames Research Center, working
 with the Astrobee team in the [Intelligent Robotics
 Group](https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/).
