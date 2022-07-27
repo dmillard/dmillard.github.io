@@ -8,23 +8,25 @@
 [CV](/assets/millard_cv.pdf) /
 [Google Scholar](https://scholar.google.com/citations?user=QSjK6BwAAAAJ&hl=en)
 
-I am a computer science Ph.D. student at the University of Southern California,
+I am a computer science Ph.D. candidate at the University of Southern California,
 advised by [Gaurav Sukhatme](http://www-robotics.usc.edu/~gaurav/). I am funded
-by a NASA Space Technology Research Fellowship.
+by a NASA Space Technology Research Fellowship, and am currently a Visiting
+Technologist at the Caltech/NASA Jet Propulsion Lab.
 
 My goal is to create Robots of Economic Value that Don't Make the World Worse
 (REVDMWWs).
 
 ### Research interests
 
-- Robots in dynamic environments
-- Physics simulation
+- Robotic systems in dynamic environments
+- Fast physics simulation for motion planning and optimal control
 - Strong inductive biases in machine learning
 
 ### Other interests
 
 - C++ and Julia
 - Bicycles
+- Radios (KN6SAW)
 
 ### Publications
 
@@ -62,9 +64,9 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 
 ### Condensed history
 
-In 2022, I was a visiting technologist at the Jet Propulsion Lab in [group
+In 2022, I am a visiting technologist at the Jet Propulsion Lab in [group
 347G](https://www-robotics.jpl.nasa.gov/who-we-are/groups/347G/), working on
-autonomous science for moons of the outer planets.
+autonomous science for sampling the surface of moons of the outer planets.
 
 In 2020, I was a visiting technologist at NASA Ames Research Center, working
 with the Astrobee team in the [Intelligent Robotics
