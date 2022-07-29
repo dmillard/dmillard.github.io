@@ -42,7 +42,8 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 
 - Eric Heiden\*, **David Millard\***, Erwin Coumans, Yizhou Sheng, Gaurav S.
   Sukhatme. NeuralSim: Augmenting Differentiable Simulators with Neural
-  Networks. arXiv preprint. 2020 ([pdf](https://arxiv.org/pdf/2011.04217.pdf))
+  Networks. IEEE Conference on Robotics and Automation. 2020
+  ([pdf](https://arxiv.org/pdf/2011.04217.pdf))
 
 - Eric Heiden, **David Millard**, Erwin Coumans, Gaurav S. Sukhatme. Augmenting
   Differentiable Simulators with Neural Networks to Close the Sim2Real Gap. _In
@@ -66,15 +67,16 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 
 In 2022, I am a visiting technologist at the Jet Propulsion Lab in [group
 347G](https://www-robotics.jpl.nasa.gov/who-we-are/groups/347G/), working on
-autonomous science for sampling the surface of moons of the outer planets.
+autonomous science for robotic probes sampling the surfaces of moons of the
+outer planets.
 
 In 2020, I was a visiting technologist at NASA Ames Research Center, working
 with the Astrobee team in the [Intelligent Robotics
 Group](https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/).
 
 In 2020, I was a research intern at [Google
-Brain](https://research.google/teams/brain/), working on high inductive bias
-methods of robot learning.
+Brain](https://research.google/teams/brain/), working on differentiable physics
+and learning for robots with high inductive bias.
 
 In 2019, I worked with [Iron Ox](https://ironox.com) on kinodynamically limited
 arm planning problems using trajectory optimization methods.
