@@ -78,6 +78,14 @@ class BibEntry:
             return r.render(f.read(), {'entry': self})
 
 
+def bib_entries_lt_date(e):
+    months = "jan,feb,mar,apr,may,jun,jul,sep,oct,nov,dec".split(",")
+    assert e.keyvals["month"] in months
+    ey = int(e.keyvals["year"])
+    em = months.index(e.keyvals["month"])
+    return ey * 10000 + em
+
+
 class Bib:
 
     def __init__(self, filename):
@@ -99,7 +107,13 @@ class Bib:
 
         assert depth == 0
 
-    def html(self, template_dir):
+    def html(self, template_dir, condition=None):
+        entries = self.entries
+        if condition != None:
+            entries = filter(condition, entries)
+
+        sorted_entries = sorted(entries, key=bib_entries_lt_date, reverse=True)
+
         items = "\n".join(f"<li>{e.html(template_dir)}</li>"
-                          for e in self.entries)
+                          for e in sorted_entries)
         return f"<ul>\n{items}\n</ul>"

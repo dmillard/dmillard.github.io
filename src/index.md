@@ -28,9 +28,17 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 - Bicycles
 - Radios (KN6SAW)
 
-### Publications
+### Conference Publications
 
-{{ publications }}
+{{ confs }}
+
+### Workshop Papers
+
+{{ workshops }}
+
+### Preprints
+
+{{ preprints }}
 
 ### Condensed history
 

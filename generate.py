@@ -47,6 +47,14 @@ def output(output_path, html):
         f.write(html)
 
 
+def oftype(typestr):
+
+    def f(e):
+        return e.keyvals["note"]["type"] == typestr
+
+    return f
+
+
 def main():
     bib = bibparser.Bib(in_dir("assets/dmillard.bib"))
 
@@ -59,7 +67,13 @@ def main():
     with open(in_dir("index.md")) as f:
         content = convert(f.read())
 
-    content = render(content, {'publications': bib.html(in_dir("templates"))})
+    tmpldir = in_dir("templates")
+    content = render(
+        content, {
+            'confs': bib.html(tmpldir, oftype("conference")),
+            'workshops': bib.html(tmpldir, oftype("workshop")),
+            'preprints': bib.html(tmpldir, oftype("preprint")),
+        })
 
     with open(in_dir("templates/base.mustache")) as f:
         html = render(f.read(), {'content': content})
