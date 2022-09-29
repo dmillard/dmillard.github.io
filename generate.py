@@ -6,16 +6,13 @@ import shutil
 
 import markdown
 import pystache
+import bibparser
 
 # TODO bibtex parsing
 
 IN_DIR = "src"
 OUT_DIR = os.path.dirname(os.path.realpath(__file__))
 ENCODING = "utf-8"
-
-
-def decode(b):
-    return b.decode(ENCODING)
 
 
 def in_dir(path):
@@ -34,18 +31,15 @@ def copy_tree(src, dst):
     shutil.copytree(src, dst)
 
 
-def convert(markdown_path):
+def convert(markdown_str):
     html = io.BytesIO()
     md = markdown.Markdown()
-    md.convertFile(input=markdown_path, output=html)
-
-    return decode(html.getvalue())
+    return md.convert(markdown_str)
 
 
-def render(template_path, template_args=None):
-    with open(template_path) as f:
-        r = pystache.Renderer(escape=lambda u: u)
-        return r.render(f.read(), template_args)
+def render(template_str, template_args=None):
+    r = pystache.Renderer(escape=lambda u: u)
+    return r.render(template_str, template_args)
 
 
 def output(output_path, html):
@@ -54,14 +48,22 @@ def output(output_path, html):
 
 
 def main():
+    bib = bibparser.Bib(in_dir("assets/dmillard.bib"))
+
     if not os.path.exists(OUT_DIR):
         os.mkdir(OUT_DIR)
 
     if os.path.exists(in_dir("assets")):
         copy_tree(in_dir("assets"), out_dir("assets"))
 
-    content = convert(in_dir("index.md"))
-    html = render(in_dir("templates/base.mustache"), {'content': content})
+    with open(in_dir("index.md")) as f:
+        content = convert(f.read())
+
+    content = render(content, {'publications': bib.html(in_dir("templates"))})
+
+    with open(in_dir("templates/base.mustache")) as f:
+        html = render(f.read(), {'content': content})
+
     output(out_dir("index.html"), html)
 
 

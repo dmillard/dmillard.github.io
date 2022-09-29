@@ -30,45 +30,14 @@ My goal is to create Robots of Economic Value that Don't Make the World Worse
 
 ### Publications
 
-- James A. Preiss\*, **David Millard\***, Tao Yao\*, Gaurav S. Sukhatme.
-  Tracking Fast Trajectories with a Deformable Object using a Learned Model.
-  IEEE Conference on Robotics and Automation. 2022.
-  ([pdf](papers/2022ICRA_Preiss_Millard_Yao.pdf))
-
-- Eric Heiden, Christopher E. Denniston, **David Millard**, Fabio Ramos, Gaurav
-  S. Sukhatme. Probabilistic Inference of Simulation Parameters vis Parallel
-  Differentiable Simulation. IEEE Conference on Robotics and Automation. 2022.
-  ([pdf](https://arxiv.org/pdf/2109.08815.pdf))
-
-- Eric Heiden\*, **David Millard\***, Erwin Coumans, Yizhou Sheng, Gaurav S.
-  Sukhatme. NeuralSim: Augmenting Differentiable Simulators with Neural
-  Networks. IEEE Conference on Robotics and Automation. 2020
-  ([pdf](https://arxiv.org/pdf/2011.04217.pdf))
-
-- Eric Heiden, **David Millard**, Erwin Coumans, Gaurav S. Sukhatme. Augmenting
-  Differentiable Simulators with Neural Networks to Close the Sim2Real Gap. _In
-  NeurIPS workshop on Differentiable Computer Vision, Graphics, and Physics_, 2020
-  ([pdf](https://arxiv.org/pdf/2007.06045.pdf))
-
-- **David Millard\***, Eric Heiden\*, Shubham Agrawal, Gaurav S. Sukhatme.
-  Automatic Differentiation and Continuous Sensitivity Analysis of Rigid Body
-  Dynamics. arXiv preprint. 2020 ([pdf](https://arxiv.org/pdf/2001.08539.pdf))
-
-- Eric Heiden\*, **David Millard\***, Hejia Zhang, Gaurav S. Sukhatme.
-  Interactive Differentiable Simulation. arXiv preprint. 2019
-  ([pdf](https://arxiv.org/pdf/1905.10706.pdf))
-
-- Eric Heiden\*, **David Millard\***, Gaurav S. Sukhatme. Real2Sim Transfer
-  using Differentiable Physics. _In R:SS Workshop on Closing the Reality Gap
-  in Sim2Real Transfer for Robotic Manipulation_, 2019.
-  ([pdf](https://sim2real.github.io/assets/papers/heiden.pdf))
+{{ publications }}
 
 ### Condensed history
 
-In 2022, I am a visiting technologist at the Jet Propulsion Lab in [group
-347G](https://www-robotics.jpl.nasa.gov/who-we-are/groups/347G/), working on
-autonomous science for robotic probes sampling the surfaces of moons of the
-outer planets.
+In 2022, I am a visiting technologist at the Caltech/NASA Jet Propulsion Lab in
+[group 347G](https://www-robotics.jpl.nasa.gov/who-we-are/groups/347G/),
+working on autonomous science for robotic probes sampling the surfaces of moons
+of the outer planets.
 
 In 2020, I was a visiting technologist at NASA Ames Research Center, working
 with the Astrobee team in the [Intelligent Robotics

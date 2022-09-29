@@ -1,0 +1,26 @@
+<style>
+#bib-{{ entry.key }} {
+  display: none;
+}
+#bibtoggle-{{ entry.key }}:checked ~ #bib-{{ entry.key }} {
+  display: block;
+  border: 1px solid black;
+  margin: 1em;
+  padding: 0 1em;
+  background-color: #e0e0e0;
+}
+</style>
+<div class="publication">
+  {{ entry.authorhtml }}.
+  "{{ entry.keyvals.title }}".
+  <i>{{ entry.keyvals.journal }}</i>.
+  {{ entry.keyvals.year }}.
+  (
+  {{#entry.keyvals.note.links}}<a href="{{url}}">{{ name }}</a>, {{/entry.keyvals.note.links}}
+  <input type="checkbox" class="bibtoggle" id="bibtoggle-{{ entry.key }}" />
+  <label for="bibtoggle-{{ entry.key }}">show BibTeX</label>
+  )
+  <div class="bib" id="bib-{{ entry.key }}">
+    <pre>{{ entry.bibstring }}</pre>
+  </div>
+</div>

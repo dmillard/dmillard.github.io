@@ -1,2 +1,2 @@
 all:
-	pipenv run python ./generate.py
+	PYTHONPATH=. pipenv run python ./generate.py
