@@ -1,23 +1,82 @@
-
-@article{heiden_interactive_2019,
-	title = {Interactive Differentiable Simulation},
-	rights = {All rights reserved},
-	url = {http://arxiv.org/abs/1905.10706},
-	abstract = {Intelligent agents need a physical understanding of the world to predict the impact of their actions in the future. While learning-based models of the environment dynamics have contributed to significant improvements in sample efficiency compared to model-free reinforcement learning algorithms, they typically fail to generalize to system states beyond the training data, while often grounding their predictions on non-interpretable latent variables. We introduce Interactive Differentiable Simulation ({IDS}), a differentiable physics engine, that allows for efficient, accurate inference of physical properties of rigid-body systems. Integrated into deep learning architectures, our model is able to accomplish system identification using visual input, leading to an interpretable model of the world whose parameters have physical meaning. We present experiments showing automatic task-based robot design and parameter estimation for nonlinear dynamical systems by automatically calculating gradients in {IDS}. When integrated into an adaptive model-predictive control algorithm, our approach exhibits orders of magnitude improvements in sample efficiency over model-free reinforcement learning algorithms on challenging nonlinear control domains.},
-	journaltitle = {{arXiv}:1905.10706 [cs, stat]},
-	author = {Heiden, Eric and Millard, David and Zhang, Hejia and Sukhatme, Gaurav S.},
-	urldate = {2019-07-12},
-	date = {2019-05-25},
-	eprinttype = {arxiv},
-	eprint = {1905.10706},
-	keywords = {Computer Science - Machine Learning, Computer Science - Robotics, Electrical Engineering and Systems Science - Systems and Control, Statistics - Machine Learning},
-	file = {arXiv\:1905.10706 PDF:/home/dmillard/Zotero/storage/LKQHBM6C/Heiden et al. - 2019 - Interactive Differentiable Simulation.pdf:application/pdf;arXiv.org Snapshot:/home/dmillard/Zotero/storage/DWJE5J2F/1905.html:text/html}
+@article{heiden2019interactive,
+  title={Interactive differentiable simulation},
+  author={Heiden, Eric and Millard, David and Zhang, Hejia and Sukhatme, Gaurav S},
+  journal={arXiv preprint arXiv:1905.10706},
+  year={2019},
+  month={may},
+  note={arXiv: https://arxiv.org/abs/1905.10706, pdf: https://arxiv.org/pdf/1905.10706.pdf},
 }
 
-@article{heiden_real2sim_2019,
-	title = {Real2Sim Transfer using Differentiable Physics},
-	rights = {All rights reserved},
-	url = {https://sim2real.github.io/assets/papers/heiden.pdf},
-	author = {Heiden, Eric and Millard, David and Sukhatme, Gaurav S},
-	date = {2019}
+@inproceedings{heiden2019real2sim,
+  title={Real2sim transfer using differentiable physics},
+  author={Heiden, Eric and Millard, David and Sukhatme, Gaurav},
+  booktitle={RSS 2019 Workshop: Workshop on Closing the Reality Gap in Sim2real Transfer for Robotic Manipulation},
+  year={2019},
+  month={jun},
+}
+
+@article{millard2020automatic,
+  title={Automatic differentiation and continuous sensitivity analysis of rigid body dynamics},
+  author={Millard, David and Heiden, Eric and Agrawal, Shubham and Sukhatme, Gaurav S},
+  journal={arXiv preprint arXiv:2001.08539},
+  year={2020},
+  month={jan},
+  note={arXiv: https://arxiv.org/abs/2001.08539, pdf: https://arxiv.org/pdf/2001.08539.pdf},
+}
+
+@article{heiden2020augmenting,
+  title={Augmenting differentiable simulators with neural networks to close the sim2real gap},
+  author={Heiden, Eric and Millard, David and Coumans, Erwin and Sukhatme, Gaurav S},
+  journal={arXiv preprint arXiv:2007.06045},
+  year={2020},
+  month={jul},
+  note={arXiv: https://arxiv.org/abs/2007.06045, pdf: https://arxiv.org/pdf/2007.06045.pdf},
+}
+
+@inproceedings{heiden2020sparse,
+  title={Sparse-Input Neural Network Augmentations for Differentiable Simulators},
+  author={Heiden, Eric and Millard, David and Coumans, Erwin and Sukhatme, Gaurav S},
+  journal={NeurIPS 2020 Workshop: Differentiable computer vision, graphics, and physics in machine learning},
+  year={2020},
+  month={dec},
+}
+
+@inproceedings{heiden2021neuralsim,
+  title={NeuralSim: Augmenting differentiable simulators with neural networks},
+  author={Heiden, Eric and Millard, David and Coumans, Erwin and Sheng, Yizhou and Sukhatme, Gaurav S},
+  booktitle={IEEE International Conference on Robotics and Automation},
+  pages={9474--9481},
+  venue={Xi'an, China},
+  year={2021},
+  month={sep},
+  note={IEEE: https://ieeexplore.ieee.org/document/9560935, arXiv: https://arxiv.org/abs/2011.04217, pdf: https://arxiv.org/pdf/2011.04217.pdf}
+}
+
+@inproceedings{heiden2021probabilistic,
+  title={Probabilistic Inference of Simulation Parameters via Parallel Differentiable Simulation},
+  author={Heiden, Eric and Denniston, Christopher E and Millard, David and Ramos, Fabio and Sukhatme, Gaurav S},
+  journal={IEEE Conference on Robotics and Automation},
+  venue={Philadelphia, USA},
+  year={2022},
+  month={may},
+  note={IEEE: https://ieeexplore.ieee.org/document/9812293, arXiv: https://arxiv.org/abs/2109.08815, https://arxiv.org/pdf/2109.08815.pdf}
+}
+
+@inproceedings{preissj2022tracking,
+  title={Tracking Fast Trajectories with a Deformable Object using a Learned Model},
+  author={Preiss, James A and Millard, David and Yao, Tao and Sukhatme, Gaurav S},
+  journal={IEEE Conference on Robotics and Automation},
+  venue={Philadelphia, USA},
+  year={2022},
+  month={may},
+  note={IEEE: https://ieeexplore.ieee.org/abstract/document/9812189, pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9812189}
+}
+
+@inproceedings{millardd2022parameter,
+  title={Parameter Estimation for Deformable Objects in Robotic Manipulation Tasks},
+  author={Millard, David and Preiss, James A and Barbič, Jernej and Sukhatme, Gaurav S},
+  journal={International Symposium on Robotics Research},
+  venue={Geneva, Switzerland},
+  year={2022},
+  month={sep},
 }
