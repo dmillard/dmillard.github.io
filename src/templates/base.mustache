@@ -63,7 +63,42 @@
       margin: 0;
     }
 
+    .hidden {
+      display: none;
+    }
+
   </style>
+
+  <script type="text/javascript">
+    window.onload = (event) => {
+          const bibs = document.getElementsByClassName("bib");
+          for (const bib of bibs) {
+                let bibString = bib.getElementsByTagName('pre')[0].innerHTML;
+                let p = document.createElement("p");
+                let showLink = document.createElement("a");
+                showLink.setAttribute("href", "javascript:void(0)");
+                showLink.innerHTML = "copy to clipboard";
+                let successSpan = document.createElement("span");
+                successSpan.classList.add("hidden");
+                successSpan.innerHTML = " &#10004";
+                p.prepend("(", showLink, successSpan, ")");
+                bib.append(p);
+                showLink.onclick = (event) => {
+                      let clipPromise = window.navigator.clipboard.writeText(bibString);
+                      clipPromise.then(
+                            (value) => {
+                                  successSpan.classList.remove("hidden");
+                                  setTimeout(
+                                       () => successSpan.classList.add("hidden"),
+                                       3000
+                                  );
+                            },
+                            (err) => console.log(err)
+                      );
+                };
+          };
+    };
+  </script>
 
 </head>
 
