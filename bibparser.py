@@ -7,9 +7,12 @@ class BibAuthor:
 
     def __init__(self, s):
         self.lname, self.fname = map(str.strip, s.split(","))
+        self.cofirst = False
 
     def html(self):
         out = f"{self.fname} {self.lname}"
+        if self.cofirst:
+            out += "*"
         if self.fname == "David" and self.lname == "Millard":
             out = f"<b>{out}</b>"
         return out
@@ -61,6 +64,10 @@ class BibEntry:
             BibAuthor(author)
             for author in self.keyvals["author"].split(" and ")
         ]
+        if "cofirst" in self.keyvals["note"]:
+            for author in authors[:self.keyvals["note"]["cofirst"]]:
+                author.cofirst = True
+
         self.authorhtml = authors[-1].html()
         if len(authors) > 1:
             self.authorhtml = " and ".join(
