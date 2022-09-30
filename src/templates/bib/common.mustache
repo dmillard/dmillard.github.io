@@ -12,8 +12,14 @@
 </style>
 <div class="publication">
   {{ entry.authorhtml }}.
-  &ldquo;{{ entry.keyvals.title }}&rdquo;.
-  <i>{{ entry.keyvals.journal }}</i>.
+  &ldquo;{{ entry.keyvals.title }},&rdquo;
+  {{ #entry.keyvals.journal }}
+    <i>{{ entry.keyvals.journal }}</i>.
+  {{ /entry.keyvals.journal }}
+  {{ #entry.keyvals.eventtitle }}
+    presented at the {{ entry.keyvals.eventtitle }}{{ #entry.keyvals.venue }}
+      ({{ entry.keyvals.venue }}){{ /entry.keyvals.venue }}.
+  {{ /entry.keyvals.eventtitle }}
   {{ entry.keyvals.year }}.
   (
   {{#entry.keyvals.note.links}}<a href="{{url}}">{{ name }}</a>, {{/entry.keyvals.note.links}}

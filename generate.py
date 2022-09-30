@@ -56,7 +56,7 @@ def oftype(typestr):
 
 
 def main():
-    bib = bibparser.Bib(in_dir("assets/dmillard.bib"))
+    bib = bibparser.Bib(in_dir("dmillard.bib"))
 
     if not os.path.exists(OUT_DIR):
         os.mkdir(OUT_DIR)
